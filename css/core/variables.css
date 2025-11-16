@@ -1,0 +1,38 @@
+:root {
+  /* Cores principais */
+  --color-primary-600: #1f76d1;
+  --color-primary-800: #0f4a8a;
+
+  /* Cores neutras */
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f7f7f8;
+  --color-neutral-200: #e6e8eb;
+  --color-neutral-700: #3b4251;
+  --color-neutral-900: #151823;
+
+  /* Tipografia */
+  --font-family-sans: "Inter", system-ui, sans-serif;
+  --font-size-sm: 20px;
+  --font-size-md: 18px;
+  --font-size-lg: 24px;
+  --font-size-xl: 32px;
+  --font-size-2xl: 44px;
+
+  /* Espaçamentos */
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+
+  /* Container */
+  --container-max: 1600px;
+
+  /* Bordas e sombras */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.08);
+  --shadow-md: 0 6px 16px rgba(0,0,0,0.12);
+}
+

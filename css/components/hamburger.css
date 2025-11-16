@@ -1,0 +1,21 @@
+.hamburger {
+  display: none;
+  background: none;
+  border: 0;
+  padding: var(--space-8);
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-neutral-900);
+  margin: 5px 0;
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: inline-block;
+  }
+}

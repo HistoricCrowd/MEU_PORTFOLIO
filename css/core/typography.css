@@ -1,0 +1,17 @@
+.h1 {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-neutral-900);
+}
+
+.h2 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-neutral-700);
+}
+
+.body-lg {
+  font-size: var(--font-size-lg);
+  line-height: 1.6;
+  color: var(--color-neutral-700);
+}
