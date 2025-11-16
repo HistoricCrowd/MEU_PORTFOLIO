@@ -5,3 +5,149 @@
 @import url("core/grid.css");
 @import url("core/utilities.css");
 @import url("core/fonts.css");
+
+/* --- ESTILOS PRINCIPAIS --- */
+
+.site-header {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.navbar {
+  background-color: #2c2c2c;
+  padding: 20px;
+}
+
+.navbar__menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.has-submenu {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.has-submenu:hover .submenu,
+.has-submenu.open .submenu {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+/* --- RODAPÉ --- */
+
+.footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
+/* --- RESPONSIVIDADE --- */
+
+@media (max-width: 768px) {
+  .navbar__menu ul {
+    flex-direction: column;
+    display: none;
+    background-color: #2c2c2c;
+    padding: 20px;
+  }
+
+  .navbar__menu ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #fff;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-4 {
+    width: 48%; /* dois cards por linha */
+  }
+}
+
+@media (max-width: 600px) {
+  .col-4 {
+    width: 100%; /* um card por linha */
+    margin-bottom: 24px;
+  }
+
+  .h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .h2 {
+    font-size: 1.4rem;
+  }
+
+  .body-lg {
+    font-size: 1rem;
+  }
+}
